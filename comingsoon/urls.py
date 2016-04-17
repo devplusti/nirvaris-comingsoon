@@ -20,6 +20,6 @@ from .views import KeepInTouchEmailView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^coming-soon$', KeepInTouchEmailView.as_view(),name='coming-soon')
+    url(r'^keep-in-touch$', KeepInTouchEmailView.as_view(),name='keep-in-touch')
 
 ]
