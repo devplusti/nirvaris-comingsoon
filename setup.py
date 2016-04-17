@@ -13,7 +13,7 @@ setup(
     packages=['comingsoon'],
     include_package_data=True,
     license='MIT License',  # example license
-    description='A simple Django app for a coming soon or underconstuction page,
+    description='A simple Django app for a coming soon or underconstuction page',
     long_description=README,
     url='https://github.com/nirvaris/nirvaris-comingsoon',
     author='Nirvaris',
