@@ -20,6 +20,8 @@ class KeepInTouchEmailView(View):
     def get(self, request):
         form = KeepInTouchEmailForm()
 
+        form.anti_spam()
+
         request_context = RequestContext(request,{'form':form})
 
         return render_to_response(self.template_name, request_context)
@@ -42,6 +44,7 @@ class KeepInTouchEmailView(View):
                 #pdb.set_trace()
                 messages.error(self.request,_('Sorry! We could not check your email.'))
 
+        form.anti_spam()
         request_context = RequestContext(request,{'form':form})
 
         return render_to_response(self.template_name, request_context)
